@@ -1,0 +1,21 @@
+---
+name: AXT1800 build kernel 5.4 
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: requirements
+        run: |
+          sudo apt update
+          sudo apt install build-essential libncurses5-dev gawk git libssl-dev gettext zlib1g-dev swig unzip time rsync python3 python3-setuptools python3-yaml -y
+      - name: config
+        run: |
+          git config --global user.email "5918983@qq.com"
+          git config --global user.name "dl"
+      - name: build
+        run: |        
+          ./build.sh ~ target_wlan_ap-gl-axt1800-5.4
