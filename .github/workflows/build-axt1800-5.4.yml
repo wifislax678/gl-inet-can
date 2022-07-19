@@ -18,4 +18,4 @@ jobs:
           git config --global user.name "dl"
       - name: build
         run: |        
-          ./build.sh ~ target_wlan_ap-gl-axt1800-5.4
+          chmod u+x build.sh && ./build.sh ~ target_wlan_ap-gl-axt1800-5.4
