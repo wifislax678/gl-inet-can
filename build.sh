@@ -11,7 +11,7 @@ function main() {
     python3 setup.py -c config-wlan-ap.yml
     
     cd wlan-ap/openwrt
-    ./scripts/gen_config.py $BASE_DIR/profiles/glinet_axt1800 glinet_depends
+    ./scripts/gen_config.py profiles/glinet_axt1800 glinet_depends
 
     
     git clone https://github.com/gl-inet/glinet4.x.git
