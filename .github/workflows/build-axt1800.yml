@@ -22,7 +22,7 @@ jobs:
           git config --global user.name "dl"
       - name: build
         run: |        
-          chmod u+x build.sh && ./build.sh ~ target_wlan_ap-gl-axt1800
+          chmod u+x build.sh && ./build.sh
 
       - name: Organize files
         id: organize
