@@ -19,7 +19,7 @@ function main() {
     ./scripts/gen_config.py $BASE_DIR/gl-infra-builder/profiles/glinet_axt1800 glinet_depends
 
     
-    git clone https://github.com/gl-inet/glinet4.x.git
+    git clone https://github.com/gl-inet/glinet4.x.git -b main $BASE_DIR/glinet
     ./scripts/feeds update -a
     ./scripts/feeds install -a
     make defconfig
