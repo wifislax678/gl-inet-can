@@ -26,3 +26,4 @@ feeds:
 include: []
 packages:
   - luci-app-openclash
+  - luci-app-passwall
