@@ -23,7 +23,7 @@ function main() {
     ./scripts/feeds update -a
     ./scripts/feeds install -a
     make defconfig
-    make -j$(expr $(nproc) + 1) GL_PKGDIR=$BASE_DIR/glinet/ipq60xx/ V=s
+    make -j$(expr $(nproc) + 1) GL_PKGDIR=$BASE_DIR/glinet/ipq60xx/ V=99
 }
 
 main
