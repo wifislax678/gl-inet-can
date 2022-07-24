@@ -8,7 +8,7 @@ function main() {
     cd gl-infra-builder
     python3 setup.py -c config-wlan-ap.yml
     cd wlan-ap/openwrt
-    ./scripts/gen_config.py target_wlan_ap-gl-axt1800 luci
+    ./scripts/gen_config.py target_wlan_ap-gl-axt1800 glinet_depends
     make -j17
 }
 
