@@ -3,6 +3,9 @@ name: AXT1800 build kernel 4.x
 on:
   workflow_dispatch:
 
+env:
+  TZ: Asia/Shanghai
+
 jobs:
   build:
     runs-on: ubuntu-20.04
@@ -12,6 +15,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt install build-essential libncurses5-dev gawk git libssl-dev gettext zlib1g-dev swig unzip time rsync python3 python3-setuptools python3-yaml -y
+          sudo timedatectl set-timezone "$TZ"
       - name: config
         run: |
           git config --global user.email "5918983@qq.com"
