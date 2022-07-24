@@ -5,7 +5,7 @@ BASE_DIR=$(pwd)
 
 function main() {
     git clone https://github.com/gl-inet/gl-infra-builder.git  $BASE_DIR/gl-infra-builder
-    cp -r $BASE_DIR/*.yml 
+    cp -r $BASE_DIR/*.yml $BASE_DIR/gl-infra-builder/profiles
     
     cd $BASE_DIR/gl-infra-builder
     python3 setup.py -c config-wlan-ap.yml
