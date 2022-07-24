@@ -5,14 +5,14 @@ BASE_DIR=$(pwd)
 
 function main() {
     git clone https://github.com/gl-inet/gl-infra-builder.git  $BASE_DIR/gl-infra-builder
-    cp -r $BASE_DIR/*.yml $BASE_DIR/gl-infra-builder/profiles
+    cp -r $BASE_DIR/*.yml 
     
     cd $BASE_DIR/gl-infra-builder
     python3 setup.py -c config-wlan-ap.yml
     
     cd wlan-ap/openwrt
-    ./scripts/gen_config.py target_wlan_ap-gl-axt1800 glinet_depends
-    
+    ./scripts/gen_config.py $BASE_DIR/gl-infra-builder/profiles/glinet_axt1800 glinet_depends
+
     
     git clone https://github.com/gl-inet/glinet4.x.git
     ./scripts/feeds update -a
