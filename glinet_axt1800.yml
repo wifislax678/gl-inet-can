@@ -29,5 +29,5 @@ feeds:
     revision: ba0e907af63c5f7dff8a0a513076915a15b75b5f
 include: []
 packages:
-  - luci-app-openclash
-  - luci-app-passwall
+#  - luci-app-openclash
+#  - luci-app-passwall
