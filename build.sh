@@ -2,7 +2,7 @@
 
 
 # BASE_DIR=$(pwd)
-BASE_DIR="~"
+BASE_DIR=~
 
 function main() {
     git clone https://github.com/gl-inet/gl-infra-builder.git  $BASE_DIR/gl-infra-builder
