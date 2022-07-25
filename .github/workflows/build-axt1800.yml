@@ -1,5 +1,5 @@
 ---
-name: AXT1800 build kernel 4x
+name: AXT1800 build kernel 4.x
 on:
   workflow_dispatch:
 
