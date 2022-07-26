@@ -3,7 +3,7 @@
 
 BASE_DIR=$(pwd)
 
-function line() {
+function print_line() {
     echo '###############################################################################'
 }
 
@@ -15,11 +15,11 @@ function main() {
     python3 setup.py -c config-wlan-ap.yml
     
     cd wlan-ap/openwrt
-    line
+    print_line
     ls -lh
-    line
+    print_line
     ls profiles/
-    line
+    print_line
     ./scripts/gen_config.py glinet_axt1800 glinet_depends
 
     
