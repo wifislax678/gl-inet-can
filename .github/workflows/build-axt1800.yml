@@ -28,6 +28,9 @@ jobs:
         id: organize
         if: true && !failure() && !cancelled()
         run: |
+          echo '###############################################################################'
+          echo $PWD
+          echo '###############################################################################'
           ls -lh ~/gl-infra-builder/wlan-ap/openwrt/bin/targets/*/*
           cd ~/gl-infra-builder/wlan-ap/openwrt/bin/targets/*/*
           rm -rf packages
