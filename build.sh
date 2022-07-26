@@ -3,6 +3,10 @@
 
 BASE_DIR=$(pwd)
 
+function line() {
+    echo '###############################################################################'
+}
+
 function main() {
     git clone https://github.com/gl-inet/gl-infra-builder.git  $BASE_DIR/gl-infra-builder
     cp -r $BASE_DIR/*.yml $BASE_DIR/gl-infra-builder/profiles
@@ -11,11 +15,11 @@ function main() {
     python3 setup.py -c config-wlan-ap.yml
     
     cd wlan-ap/openwrt
-    echo '#############################################################'
+    line
     ls -lh
-    echo '#############################################################'
+    line
     ls profiles/
-    echo '#############################################################'
+    line
     ./scripts/gen_config.py glinet_axt1800 glinet_depends
 
     
