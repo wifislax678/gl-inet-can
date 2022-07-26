@@ -16,6 +16,8 @@ function main() {
     
     cd wlan-ap/openwrt
     print_line
+    echo $BASE_DIR
+    print_line
     ls -lh
     print_line
     ls profiles/
