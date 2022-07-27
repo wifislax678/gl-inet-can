@@ -32,5 +32,4 @@ packages:
   - wireless-regdb
   - wget-ssl
   - kmod-wireguard-backport
-  - luci-app-openclash
-  - luci-app-passwall
+
