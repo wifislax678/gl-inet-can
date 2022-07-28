@@ -22,7 +22,7 @@ function main() {
     print_line
     ls profiles/
     print_line
-    ./scripts/gen_config.py glinet_axt1800 glinet_depends
+    ./scripts/gen_config.py glinet-axt1800 glinet_depends
 
     
     git clone https://github.com/gl-inet/glinet4.x.git -b main $BASE_DIR/glinet
