@@ -1,7 +1,8 @@
 #!/bin/env bash
 
 
-BASE_DIR=$(pwd)
+# BASE_DIR=$(pwd)
+BASE_DIR="/workspace"
 
 function print_line() {
     echo '###############################################################################'
