@@ -1,6 +1,6 @@
 #!/bin/env bash
 
-sudo mkdir /workspace
+sudo mkdir /workspace && sudo chown $USER:$GROUPS /workspace
 # BASE_DIR=$(pwd)
 BASE_DIR="/workspace"
 cd $BASE_DIR
