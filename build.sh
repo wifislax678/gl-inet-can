@@ -3,6 +3,7 @@
 sudo mkdir /workspace
 # BASE_DIR=$(pwd)
 BASE_DIR="/workspace"
+cd $BASE_DIR
 
 function print_line() {
     echo '###############################################################################'
