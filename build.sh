@@ -1,6 +1,6 @@
 #!/bin/env bash
 
-
+mkdir /workspace
 # BASE_DIR=$(pwd)
 BASE_DIR="/workspace"
 
