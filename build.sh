@@ -14,7 +14,7 @@ function main() {
     cp -r $WORK_PATH/*.yml $WORK_PATH/gl-infra-builder/profiles
     
     cd $WORK_PATH/gl-infra-builder
-    python3 setup.py -c config-wlan-ap.yml
+    python3 setup.py -c configs/config-wlan-ap.yml
     
     cd wlan-ap/openwrt
     print_line
