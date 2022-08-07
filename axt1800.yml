@@ -1,0 +1,19 @@
+feeds:
+
+  - name: custom
+
+    path: ../feeds_dir/custom
+
+  - name: chajian
+
+    uri: https://github.com/NueXini/NueXini_Packages.git
+
+    revision: d813c7ca990995e822d99c28bd0045326fd7c843
+
+packages:
+
+  - luci-app-ssr-plus
+
+  - luci-app-passwall
+
+diffconfig: |
